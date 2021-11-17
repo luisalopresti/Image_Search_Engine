@@ -31,3 +31,8 @@ In the validation folder you will find a gallery and a query.
 
 # How to measure the performances: 
 To measure the performance of your algorithm we will use the top-1, top-3 and top-10 accuracy metric. The top-k accuracy metric allows to measure how often the correct match/label falls in the top-k matches/predictions a
+
+# Best performing model
+The best performing model has been ResNet50, succeeding around 53% of times for the top-1, 73% at top-3, and 86% at top-10.
+The outcome was predictable because ResNet50 is a very deep network, which has been already trained over more than one million images.
+Therefore, the correct weights were already saved and the remaining main task to accomplish was to choose a measure of similarity (in our case the Euclidean distance) and compute the distance among features. We also obtained very good results with the SURF model (almost as much competitive).
